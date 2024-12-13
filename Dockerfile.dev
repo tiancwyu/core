@@ -10,6 +10,8 @@ RUN \
     && pipx uninstall mypy \
     && pipx uninstall pylint
 
+RUN cat /etc/apt/sources.list
+
 RUN \
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && apt-get update \
